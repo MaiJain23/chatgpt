@@ -14,4 +14,18 @@ print(list(map(lambda emp:emp["name"],employees)))
 
 #increase salary of all employees by 10%
 
-print(list(map(lambda emp:emp["salary"]*1.10,employees)))
+#
+
+
+#employee salary greater than 50
+
+print("=========================================================")
+above50000=list(filter(lambda emp:emp['salary']>50000,employees))
+print(list(map(lambda emp:emp['name'],above50000)))
+
+
+#employee of it department
+
+print("===========================================================")
+itdepartment=list(filter(lambda emp:emp['department'] == "IT",employees))
+print(list(map(lambda emp:emp['name'],itdepartment)))
